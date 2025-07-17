@@ -1,38 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    margin: 0;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    width: 350px;
+    padding: 0;
+    background-color: #f0f4ff;
+    text-align: center;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #e0e8ff;
+    padding: 15px 20px;
+    color: #3f4a6e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.App-link {
-  color: #61dafb;
+.App-header h1 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content-area {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    text-align: left;
+}
+
+.card-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #6a7fdb;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.selected-text,
+.result-text {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    min-height: 30px;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+.verify-button {
+    background: linear-gradient(135deg, #7b8cde 0%, #525f9d 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(123, 140, 222, 0.4);
+    transition: all 0.2s ease-in-out;
+}
+
+.verify-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(123, 140, 222, 0.5);
+}
+
+.result-card {
+    background-color: #fcfdff;
 }
